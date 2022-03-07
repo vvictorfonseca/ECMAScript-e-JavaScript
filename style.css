@@ -1,0 +1,146 @@
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    height: 100px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 48px;
+    color: white;
+    background-color: black;
+}
+
+main {
+    height: 100%;
+    width: 800px;
+    background-color: black;
+    margin: auto auto;
+}
+
+article div.title {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 15px;
+    color: white;
+}
+
+article div.title h3 {
+    font-size: 24px;
+    font-weight: 100;
+    font-style: bold;
+    margin-left: 5px;
+    color: white;
+}
+
+p {
+    margin-left: 5px;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: white;
+}
+
+main .article_3 p:nth-child(4) {
+    font-size: 25px;
+}
+main .article_3 p:nth-child(11){
+    font-size: 25px;
+}
+
+main .article_4 p:nth-child(5) {
+    font-size: 25px;
+}
+
+main .article_4 p:nth-child(10) {
+    font-size: 25px;
+}
+
+main .article_4 p:nth-child(15) {
+    font-size: 25px;
+}
+
+main .article_5 p:nth-child(4) {
+    font-size: 25px;
+}
+
+main .article_6 p:nth-child(3) {
+    font-size: 25px;
+}
+
+main .article_8 p:nth-child(2) {
+    font-size: 25px;
+}
+
+main .article_8 p:nth-child(6) {
+    font-size: 25px;
+}
+
+main .article_8 p:nth-child(9) {
+    font-size: 25px;
+}
+
+main .article_8 p:nth-child(14) {
+    font-size: 25px;
+}
+
+main .article_9 p:nth-child(2) {
+    font-size: 25px;
+}
+
+main .article_9 p:nth-child(7) {
+    font-size: 25px;
+}
+
+main .article_9 p:nth-child(12) {
+    font-size: 25px;
+}
+
+main .article_9 p:last-of-type {
+    font-size: 25px;
+}
+
+main article:nth-child(2){
+    margin-top: 45px;
+}
+
+main article:nth-child(3){
+    margin-top: 45px;
+}
+
+main article:nth-child(4){
+    margin-top: 45px;
+}
+
+main article:nth-child(5){
+    margin-top: 45px;
+}
+
+main article:nth-child(6){
+    margin-top: 45px;
+}
+
+main article:nth-child(7){
+    margin-top: 45px;
+}
+
+main article:nth-child(8){
+    margin-top: 45px;
+}
+
+main article:nth-child(9){
+    margin-top: 45px;
+}
+
+main img {
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-top: 15px;
+}

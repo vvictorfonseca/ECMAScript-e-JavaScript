@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>ECMAScript e JavaScript</title>
+</head>
+
+<body>
+
+    <header>
+        <span> ECMAScript e JavaScript </span>
+    </header>
+
+    <main>
+        <section>
+            <article class="article_1">
+            <div class="title">
+                <ion-icon name="caret-forward-outline"></ion-icon>
+                <h3> O que é a <b>ECMA</b>? </h3>
+            </div>
+            <p> <b>Ecma International</b> (oficialmente <i>Associação Européia dos Fabricantes de Computadores</i>) é uma organização sem fins lucrativos que desenvolve os padrões para hardware de computadores, comunicações e linguagens de programação.</p>
+
+            <p>Na web ela é famosa por ser a organização que mantém a especificação <b> ECMAScript </b>, que é a especificação núcleo para a linguagem <b> JavaScript </b>.</p>
+            </article>
+
+            <article class="article_2">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> Qual a diferença entre <b>ECMAScript</b> e <b>JavaScript</b>? </h3>
+                </div>
+                
+                <p>Há pessoas que defendem que estamos atualmente utilizando ECMAScript, e que o nome JavaScript é usado apenas por costume, já que esse nome pertence à Oracle. Em contrapartida há pessoas que dizem que é tudo a mesma coisa.</p>
+                
+                <p>Se formos definir que há uma diferença, poderíamos dizer que o ECMAScript é a especificação, e que JavaScript é uma implementação por parte dos navegadores.</p>
+            </article>    
+
+            <article class="article_3">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> ES6 - Default Parameter </h3>
+                </div>
+
+                <p>No ECMAScript 2015, os <b> parâmetros predefinidos </b> de funções foram introduzidos na linguagem JavaScript. Eles permitem que os desenvolvedores inicializem uma função com valores predefinidos, caso os argumentos não sejam fornecidos à chamada da função.</p>
+
+                <p>Inicializar parâmetros de função desta maneira tornará a leitura delas mais fácil e menos propensa a erros.</p>
+
+                <p><b>Sintaxe dos Parâmetros predefinidos:</b></p>
+
+                <p> Antes da atualização tínhamos que verificar manualmente se há valores undefined para definir os padrões</p>
+                <img src="./imagens/imagem 1.png">
+                <p>Aqui teria que usar uma condicional para verificar se o valor foi provisionado automaticamente como undefined. Em seguida, define o valor de x como 5.</p>
+
+                <p>Agora, com os parâmetros predefinidos atingimos o mesmo objetivo com um código muito menor. Defina um valor predefinido para o parâmetro em cube, atribuindo-lhe o operador de atribuição de igualdade (=), como destacado aqui:</p>
+                <img src="./imagens/Imagem 2.png">
+                <p>Agora, quando a função cube for invocada sem um argumento, ela atribuirá 5 a x e retornará o cálculo ao invés de NaN</p>
+
+                <p><b>Tipos de dados dos parâmetros predefinidos</b></p>
+                <p>Qualquer valor primitivo ou objeto pode ser usado como um valor predefinido do parâmetro. Primeiro, defina os parâmetros usando um número, string, booleano, objeto, matriz e valor nulo como um valor predefinido.</p>
+                <img src="./imagens/imagem 3.png">
+                <p>Quando essas funções forem invocadas sem parâmetros, elas usarão todos os valores predefinidos:</p>
+                <img src="./imagens/imagem 4.png">
+                <img src="./imagens/imagem 5.png">]
+
+                <p>Qualquer objeto criado em um parâmetro predefinido será criado sempre que a função for chamada. Um dos casos de uso comum para os parâmetros predefinidos é o uso deste comportamento para obter valores de um objeto. Se você tentar desestruturar ou acessar um valor de um objeto que não existe, ele emitirá um erro. No entanto, se o parâmetro predefinido for um objeto vazio, ele simplesmente retornará valores undefined, ao invés de emitir um erro:</p>
+                <img src="./imagens/imagem 6.png">
+                <p>Isso evitará erros causados pela desestruturação de objetos que não existem.</p>
+            </article> 
+
+            <article class="article_4">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> ES6 - Template Strings </h3>
+                </div>
+
+                <p>Template Strings são strings que permitem expressões embutidas. Você pode utilizar string multi-linhas e interpolação de string com elas.</p>
+                <p>Basicamente é uma nova forma de criar strings e tornar o seu código um pouco mais legível.</p>
+                <p>Template strings são envolvidas por crases (` `) em vez de aspas simples ou duplas. Template strings podem possuir placeholders. Estes são indicados por um cifrão seguido de chaves (${expression}). As expressões nos placeholders, bem como o texto em volta delas são passados a uma função. A função padrão apenas concatena as partes em uma string única.</p>
+
+                <p><b>Strings multi-linhas</b></p>
+                <p>Antes da atualização, utilizando strings normais, teríamos que usar essa síntaxe para obter strings multi-linhas:</p>
+                <img src="./imagens/imagem 7.png">
+                <p>Agora usando template strings ficou bem mais simples</p>
+                <img src="./imagens/imagem 8.png">
+
+                <p><b>Interpolação de Expressões</b></p>
+                <p>Para encapsular expressões dentro de strings, você precisava utilizar a seguinte sintaxe:</p>
+                <img src="./imagens/imagem 9.png">
+                <p>Agora, com template strings, você pode utilizar as substituições sintáticas tornando o código mais legível:</p>
+                <img src="./imagens/imagem 10.png">
+
+                <p><b>HTML feito dinamicamente no JS usando Template String</b></p>
+                <p>Exemplo tirado do projeto Bate Papo UOL:</p>
+                <img src="./imagens/imagem 11.png">
+            </article>
+
+            <article class="article_5">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> ES6 - Destructuring </h3>
+                </div>
+
+                <p>Este recurso permite extrair de um Array ou objeto valores e transformar em uma variável ou constante. No lado esquerdo da atribuição são definidos quais elementos devem ser extraídos da variável de origem.</p>
+                <img src="./imagens/imagem 12.png">
+
+                <p><b>Extraindo valores de objetos</b></p>
+                <p>Podemos extrair valores de objetos literais utilizando o nome de suas propriedades, como no exemplo abaixo:</p>
+                <img src="./imagens/imagem 13.png">
+                <p>Podemos capturar os resultados que não tenham sido extraídos como variáveis:</p>
+                <img src="./imagens/imagem 14.png">
+            </article>
+
+            <article class="article_6">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> O que é strict mode? </h3>
+                </div>
+                <p>Basicamente a opção nos possibilita colocar um programa ou uma função para que ela opere em modo estrito (‘strict’). Esse contexto estrito previne algumas ações de serem tomadas e envia mais exceções. A linha use strict instrui o navegador para usar o modo Estrito, que é como se fosse uma versão mais segura e reduzida do JavaScript.</p>
+
+                <p><b>Declarando o modo estrito</b></p>
+                <p>O modo estrito é declarado adicionando "use strict"; para o início de um script ou uma função. Declarado no início de um script, tem escopo global (todo o código no script será executado em modo estrito</p>
+                <img src="./imagens/imagem 15.png">
+                <p>Declarado dentro de uma função, tem escopo local (somente o código dentro da função está em modo estrito):</p>
+                <img src="./imagens/imagem 16.png">
+
+                <P><b>Não permitido no modo estrito</b></P>
+                
+                <p>-Usar uma variável, sem declará-la</p>
+                <p>-um objeto, sem declará-lo</p>
+                <p>-Não é permitido duplicar um nome de parâmetro</p>
+                
+            </article>
+
+            <article class="article_7">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> O que é Hoisting? </h3>
+                </div>
+
+                <p>Hoisting foi pensado como uma maneira geral de pensar sobre como os contextos de execução (especificamente as fases de criação e execução) funcionam em JavaScript.</p>
+                <p>Conceitualmente, por exemplo, uma definição estrita de elevação sugere que as declarações de variáveis e funções são fisicamente movidas para o topo do seu código, mas isso não é realmente o que acontece. Em vez disso, as declarações de variável e função são colocadas na memória durante a fase de compilação, mas permanecem exatamente onde você as digitou no seu código.</p>
+
+                <p>Exemplo do Projeto BuzzQuizz</p>
+                <img src="./imagens/imagem 19.png">
+
+            </article>
+
+            <article class="article_8">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> Qual a diferença de var, let e const? </h3>
+                </div>
+
+                <p><b>var</b></p>
+                <p>- Antes do ES6 o <b>var</b> era a única forma de declarar variáveis </p>
+                <p>- Declarações com var tem escopo global ou escopo de função/local.</p>
+                <p>- Variáveis de var podem ser declaradas de novo e atualizadas</p>
+
+                <p><b>Problemas com var</b></p>
+                <img src="./imagens/imagem 20.png">
+                <p>- Problema quando você não perceber que uma variável greeter já havia sido definida antes.</p>
+
+                <p><b>let</b></p>
+                <P>- let pode ser atualizado, mas não declarado novamente.</P>
+                <img src="./imagens/imagem 21.png">
+                <p>- let tem escopo de bloco, Um bloco é uma porção de código cercado por {}. Um bloco vive dentro dessas chaves. Tudo o que estiver cercado por chaves é um bloco. Assim, uma variável declarada com let em um bloco estará disponível apenas dentro daquele bloco.</p>
+                <img src="./imagens/imagem 18.png">
+
+                <p><b>const</b></p>
+                <p>- Variáveis declaradas com const mantêm valores constantes.</p>
+                <p>- const não pode ser atualizado nem declarado novamente</p>
+            </article>
+
+            <article class="article_9">
+                <div class="title">
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                    <h3> Qual a diferença entre for, forEach e for.. of ? </h3>
+                </div>
+
+                <p><b>for</b></p>
+                <p>- Ele permite repetir um trecho de código um determinado número de vezes, geralmente com base em um contador e uma condição de parada baseada no valor desse contador.</p>
+                <img src="./imagens/imagem 22.png">
+                <p>- Fornecem acesso ao índice do array, não ao elemento real.</p>
+                <img src="./imagens/imagem 23.png">
+
+                <p><b>forEach</b></p>
+                <p>- Com o forEach() você tem acesso ao próprio elemento do array.</p>
+                <p>- forEach é um método de array, equivale ao uso de um loop for percorrendo a array do primeiro ao último índice, e executando uma função callback que recebe o elemento atual:</p>
+                <img src="./imagens/imagem 24.png">
+                <p>A função que passamos como parâmetro para o forEach recebe como parâmetro obrigatório o currentValue</p>
+
+                <p><b>for.. of</b></p>
+                <p>O for.. of percorre valores de objetos que sejam interativos</p>
+                <img src="./imagens/imagem  25.png">
+                <img src="./imagens/imagem  26.png">
+                <p><b>Iterando sobre uma coleção de Dom</b</p>
+                <img src="./imagens/imagem 27.png">
+            </article>
+
+
+        </section>
+
+    </main>
+
+    <!-- todo Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>
